@@ -14,5 +14,5 @@ docker run -d --name sonarqube -p 9000:9000 sonarqube
 
 docker run -d --name sonarqube -p 9000:9000  -e sonar.jdbc.username=sonar  -e sonar.jdbc.password=sonar  -e sonar.jdbc.url=jdbc:postgresql://localhost/sonar  sonarqube
 
-docker run --name some-wordpress -e WORDPRESS_DB_HOST=10.1.2.3:3306  -e WORDPRESS_DB_USER=... -e WORDPRESS_DB_PASSWORD=... -d wordpress
+docker run --name some-wordpress -e WORDPRESS_DB_HOST=docker  -e WORDPRESS_DB_USER=docker -e WORDPRESS_DB_PASSWORD=docker -d wordpress
 
